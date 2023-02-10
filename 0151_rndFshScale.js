@@ -1,4 +1,4 @@
-import {rand} from "./0142_randomsFromArray.js";
+import {rand} from "./0142_randomsFromArray.mjs";
 
 export function rndFshScale(){
     const scale = ['f#', 'g#', 'a#', 'b', 'c#', 'd#', 'e#'];

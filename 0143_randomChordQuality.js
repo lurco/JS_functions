@@ -1,4 +1,4 @@
-import {rand} from "./0142_randomsFromArray.js";
+import {rand} from "./0142_randomsFromArray.mjs";
 
 export function randomChordQuality(){
     const types = ['maj', 'min', 'dim', 'aug', 'sus4', 'sus2', 'lyd',
