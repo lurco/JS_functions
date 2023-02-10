@@ -1,25 +1,24 @@
-export function setReducer(input) {
-    const repeated = {bool: false, count: 0};
+function setReducer(input) {
+    function reduce(ar){
+        let repeated = {bool: false, count: 1};
 
-    function reduce(input){
-        const result = input.map((num, i) => {
-            if (repeated.bool === true && input[i + 1] === num) {
+        let result = ar.map((char, i) => {
+
+            if(repeated.bool === false){
+                repeated.count = 1;
+            }
+            if(char === ar?.at(i + 1)){
+                repeated.bool = true;
                 repeated.count++;
                 return '';
-            } else if (repeated.bool === true && input[i + 1] !== num) {
+            } else if(char !== ar?.at(i+1)){
                 repeated.bool = false;
-                return 'repeated.count';
-            } else if (repeated.bool === false && input[i + 1] === num) {
-                repeated.bool = true;
-                repeated.count = 1;
-                return 'repeated.count';
-            } else if (repeated.bool === false && input[i + 1] !== num) {
-                repeated.count = 1;
-                return '';
+                return repeated.count;
             }
-        });
-        return reduce(result.filter((char) => char !== ''));
+        }).filter((item) => item !== '');
+
+        return result.length === 1 ? result : reduce(result);
     }
 
-    return reduce(input).flat();
+    return reduce(input)[0];
 }
