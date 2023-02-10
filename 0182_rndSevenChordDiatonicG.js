@@ -1,5 +1,5 @@
 import {rndGscale} from "./0146_rndGscale.js";
-import {majorScale} from "./0181_majorScale.js";
+import {majorScale} from "./0181_majorScale.mjs";
 
 export function rndSevenChordDiatonicG(){
     const types = ['maj7', 'min7', 'min7', 'maj7', '7', 'min7', 'm7b5'];

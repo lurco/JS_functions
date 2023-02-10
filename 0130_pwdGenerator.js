@@ -1,4 +1,4 @@
-import {range} from "./0131_range.js";
+import {range} from "./0131_range.mjs";
 
 export function pwdGenerator(length = 8) {
     const lowercase = [];
