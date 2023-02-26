@@ -1,4 +1,4 @@
-import {cycleArray} from "./0211_cycleArray.js";
+import {cycleArray} from "./0211_cycleArray.mjs";
 
 function circleOfFifths(note, n = 1) {
     n = Math.round(n);

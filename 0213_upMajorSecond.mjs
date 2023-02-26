@@ -18,5 +18,3 @@ export function upMajorSecond(startingNote){
 
     return whiteKeys[index % whiteKeys.length].concat(cycle > 0 ? '#'.repeat(Math.abs(cycle)) : 'b'.repeat(Math.abs(cycle)));
 }
-
-console.log(upMajorSecond('cb'));
