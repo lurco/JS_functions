@@ -1,5 +1,5 @@
-export function randomNum(start = 0, stop = 'None'){
-    if(stop === 'None'){
+export function randomNum(start = 0, stop = null){
+    if(stop === null){
         stop = start;
         start = 0;
     }
