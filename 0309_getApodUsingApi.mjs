@@ -1,4 +1,4 @@
-import {dateUntilTodayToYYYYMMDD} from "./312_dateUntilTodayToYYYYMMDD.mjs";
+import {dateUntilTodayToYYYYMMDD} from "./0312_dateUntilTodayToYYYYMMDD.mjs";
 
 export function getApodUsingApi(day = 0){ // 0 (default) - today, 1 - yesterday etc.
     const BASE_URL = 'https://api.nasa.gov/planetary/apod';

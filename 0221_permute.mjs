@@ -13,5 +13,3 @@ export function permute(n){
 
     return result;
 }
-
-console.log(permute(20));
